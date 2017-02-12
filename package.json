@@ -1,5 +1,5 @@
 {
-  "name": "@coditorium/eslint-config",
+  "name": "eslint-config-coditorium",
   "version": "1.0.1",
   "description": "Coditorium linter rules for JavaScript.",
   "homepage": "https://bitbucket.org/coditorium/eslint-config-coditorium#readme",
@@ -17,7 +17,7 @@
     "ci": "npm run clean && npm run lint && npm run build && npm run test",
     "preversion": "npm run ci",
     "version": "npm run build && git add -A",
-    "postversion": "git push && git push --tags && npm publish && npm run clean",
+    "postversion": "git push && git push --tags && npm publish && npm run clean"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
