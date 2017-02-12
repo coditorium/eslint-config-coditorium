@@ -17,7 +17,7 @@ extends: coditorium
 
 For [koa](http://koajs.com/) based project use specific configuration:
 
-```
+```yaml
 extends: 'coditorium/koa'
 ```
 
