@@ -2,7 +2,7 @@
   "name": "eslint-config-coditorium",
   "version": "1.0.9",
   "description": "Coditorium linter rules for JavaScript.",
-  "homepage": "https://bitbucket.org/coditorium/eslint-config-coditorium#readme",
+  "homepage": "https://github.com/coditorium/eslint-config-coditorium",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:coditorium/eslint-config-coditorium.git"
