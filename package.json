@@ -1,8 +1,8 @@
 {
-  "name": "eslint-config-coditorium",
+  "name": "@coditorium/eslint-config",
   "version": "1.0.1",
   "description": "Coditorium linter rules for JavaScript.",
-  "homepage": "https://bitbucket.org/pmendelski/eslint-config-coditorium#readme",
+  "homepage": "https://bitbucket.org/coditorium/eslint-config-coditorium#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:coditorium/eslint-config-coditorium.git"
