@@ -8,12 +8,12 @@
     "url": "git+ssh://git@github.com:coditorium/eslint-config-coditorium.git"
   },
   "scripts": {
-    "clean": "rimraf ./config",
+    "clean": "rimraf ./dist",
     "lint": "eslint ./src",
     "test-successes": "eslint ./test/*/successes",
     "test-failures": "mocha --compilers js:babel-core/register ./test/failures.spec.js",
     "test": "npm run test-successes && npm run test-failures",
-    "build": "babel-node ./src/index.js ./config",
+    "build": "babel-node ./src/index.js ./dist",
     "ci": "npm run clean && npm run lint && npm run build && npm run test"
   },
   "devDependencies": {
