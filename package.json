@@ -19,9 +19,9 @@
     "test": "npm run test-successes && npm run test-failures",
     "build": "babel-node ./src/index.js ./dist",
     "ci": "npm run clean && npm run lint && npm run build && npm run test",
-    "preversion": "npm whoami && npm run ci",
+    "preversion": "npm whoami && npm run ci && cp package.json ./dist/",
     "version": "npm run build && git add -A",
-    "postversion": "git push && git push --tags && npm publish && npm run clean"
+    "postversion": "git push && git push --tags && npm publish ./dist && npm run clean"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
