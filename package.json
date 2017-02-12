@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coditorium",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Coditorium linter rules for JavaScript.",
   "homepage": "https://bitbucket.org/coditorium/eslint-config-coditorium#readme",
   "repository": {
