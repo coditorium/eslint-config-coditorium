@@ -30,6 +30,6 @@ extends: 'coditorium/koa'
 ## Different configurations
 
 - `index` - Use it for any [es6](http://es6-features.org/) projects.
-- `node` - Use it for a [node.js](https://nodejs.org/) projects.
+- `base` - Use it for [node.js](https://nodejs.org/) projects. Does not include react and other plugins.
 - `react` - Use it for [react](https://facebook.github.io/react/) projects.
 - `koa` - Use it for [koa](http://koajs.com/) based projects.
