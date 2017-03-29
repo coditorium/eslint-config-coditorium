@@ -12,10 +12,10 @@ const lint = (dirname) => {
 describe('Linter config', () => {
   const report = lint(`${__dirname}/*/failures/**/*`);
 
-  report.forEach(fileReport => {
+  report.forEach((fileReport) => {
     const relative = path.relative(__dirname, fileReport.filePath);
     it(`should generate error for ${relative}`, () => {
-      console.log(fileReport);
+      // console.log(fileReport);
       assert.ok(fileReport.errorCount > 0);
     });
   });
