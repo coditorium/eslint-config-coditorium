@@ -1,3 +1,14 @@
+# node config
+node:
+  extends: airbnb-base
+  env:
+    node: true
+    mocha: true
+  rules:
+    comma-dangle: [error, never]
+    no-unused-expressions: [0]
+    no-prototype-builtins: 0
+
 # index config
 index:
   extends: airbnb
@@ -11,7 +22,9 @@ index:
     import/resolve:
       moduleDirectory: [node_modules, src]
   rules:
-    generator-star-spacing: 0
+    comma-dangle: [error, never]
+    no-unused-expressions: [0]
+    no-prototype-builtins: 0
 
 # koa config
 koa:
@@ -28,10 +41,7 @@ react:
     mocha: true
   plugins: [react, import]
   rules:
-    comma-dangle: [error, never]
-    no-unused-expressions: [0]
     import/no-named-as-default: error
     jsx-a11y/anchor-has-content: 0
     react/require-extension: off
     react/jsx-filename-extension: [1, { extensions: [.js] }]
-    no-prototype-builtins: 0

@@ -14,14 +14,14 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "lint": "eslint ./src",
-    "test-successes": "eslint ./test/*/successes",
-    "test-failures": "mocha --compilers js:babel-core/register ./test/failures.spec.js",
-    "test": "npm run test-successes && npm run test-failures",
+    "test:successes": "eslint ./test/*/successes",
+    "test:failures": "mocha --compilers js:babel-core/register ./test/failures.spec.js",
+    "test": "npm run test:successes && npm run test:failures",
     "build": "babel-node ./src/index.js ./dist",
     "ci": "npm run clean && npm run lint && npm run build && npm run test",
     "preversion": "npm whoami && npm run ci",
     "version": "npm run build && git add -A",
-    "postversion": "git push && git push --tags && cp package.json ./dist/ && npm publish ./dist && npm run clean"
+    "postversion": "git push && git push --tags && cp package.json README.md ./dist/ && npm publish ./dist && npm run clean"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
