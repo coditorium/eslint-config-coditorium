@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Coditorium linter rules for JavaScript.",
   "homepage": "https://github.com/coditorium/eslint-config-coditorium",
+  "license": "WTFPL",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:coditorium/eslint-config-coditorium.git"
