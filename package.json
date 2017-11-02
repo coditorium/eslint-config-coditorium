@@ -16,8 +16,8 @@
     "clean": "rimraf ./dist",
     "lint": "eslint ./src",
     "test:successes": "eslint ./test/*/successes",
-    "test:failures": "mocha --compilers js:babel-core/register ./test/failures.spec.js",
-    "test": "npm run test:successes && npm run test:failures",
+    "test:failures": "mocha --require babel-core/register ./test/failures.spec.js",
+    "test": "npm run build && npm run test:successes && npm run test:failures",
     "build": "babel-node ./src/index.js ./dist",
     "ci": "npm run clean && npm run lint && npm run build && npm run test",
     "preversion": "npm whoami && npm run ci",
@@ -25,22 +25,24 @@
     "postversion": "git push && git push --tags && cp package.json README.md ./dist/ && npm publish ./dist && npm run clean"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^3.19.0",
+    "eslint": "^4.10.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.2.0",
-    "rimraf": "^2.6.1",
-    "yamljs": "^0.2.9"
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.2",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
